@@ -1,0 +1,41 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="button_style.css">
+
+
+<head>
+    <title>NASICON Stability</title>
+</head>
+
+
+<body>
+  <br />
+  <hr />
+    <div class="container">
+        <h1>NASICON stability predictor</h1>
+        <div class="row">
+            <div class="col-sm-5 col-xs-12">
+                <form method="post">
+                    <div class="form-group">
+                        <lable for="subject">Input NASICON formula below：</lable>
+                        <input type="text" id="subject" class="form-control" name="composition" value="{{ input_comp }}" />
+                    </div>
+                    <div class="form-group">
+                        <lable for="event">Stability probability：</lable>
+                        <input type="text" id="event" class="form-control" name="probability" value="{{ predict_prob }}" />
+                    </div>
+                    <br />
+                    <input type="submit" id="mybutton" value="Predict" class="btn btn-primary"/>  
+                </form>
+            </div>
+            <div class="col-sm-7 col-xs-12">
+                <br />
+                <textarea id="result"
+                    placeholder="Reference: The link to stability paper。&#013;&#010;Developer: Bin Ouyang &#013;&#010;More Details: The link to Git repo &#013;&#010;Stability map: Link to stability map of 3881 calculated NASICONs"></textarea>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <br />
+    </>
+</body>
