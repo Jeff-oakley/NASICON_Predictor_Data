@@ -8,7 +8,6 @@ To display the stabilities of NASICON compounds, we created an interactive compa
 
 The raw data (i.e. Ehull values) of this interactive map can be found in `./RawData/test_2D.csv` and `./RawData/train_2D.csv`.
 
-
 ## Data files
 
 All the raw data/processed datasets for machine learning are stored in the folder `./RawData`.
@@ -27,7 +26,11 @@ All the raw data/processed datasets for machine learning are stored in the folde
 
 ## Scripts for reproducing results in our paper
 
-The scripts for reproducing the machine learning model, metrics and all figures in our manuscript can be found in ./Script folder
+The scripts for reproducing the machine learning model, metrics and all figures in our manuscript can be found in ./Script folder.
+
+Before running the jupyter notebooks, make sure you have all dependencies installed:
+
+```pip install -r requirements.txt```
 
 * `Run_preprocess_feature_transformation.ipynb`: preprocess data by transforming basic features to 2D SIS features. 
 * `Run_Ranked_SVM.ipynb`: train ranked SVM model to predict ranking of synthesizability (E<sub>hull</sub> values).
