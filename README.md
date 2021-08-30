@@ -19,7 +19,7 @@ All the raw data/processed datasets for machine learning are stored in the folde
 
 #### ML-related datasets
 
-*  `train.csv`/`test.csv`: values of E<sub>hull</sub> and all basic features of 80-20 split train/test data for model selection. The optimal 2D SIS features is selected from 1,895,020 SIS+MLR models based on these data. 
+*  `train.csv`/`test.csv`: values of E<sub>hull</sub> and all basic features of 80-20 split train/test data for model selection. The optimal 2D SIS features is selected from 1,999,000  SIS+MLR models based on these data. 
 * `train_2D.csv`/`test_2D.csv`: values of E<sub>hull</sub> and the optimal 2D SIS features of train/test data in train.csv/test.csv.
 * `train_X_fold[1-5].dat`/`test_X_fold[1-5].dat`: values of 2D SIS features of train/test data for the five-fold cross-validation to evaluate the final model.
 * `train_Y_fold[1-5].dat`/`test_Y_fold[1-5].dat`: 0/1 encodings of synthesizability of train/test data for the five-fold cross-validation to evaluate the final model.
